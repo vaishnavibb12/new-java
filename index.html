@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        alert("This is an alert message!");
+        console.log("This line will execute after you click 'OK'.");
+    </script> -->
+
+
+    <!-- <script>
+        
+        const numberOfItemsString = prompt("How many items do you want to list?");
+
+       
+        const numberOfItems = parseInt(numberOfItemsString);
+
+        
+        if (!isNaN(numberOfItems) && numberOfItems > 0) {
+            console.log("Listing " + numberOfItems + " items:");
+
+           
+            for (let i = 1; i <= numberOfItems; i++) {
+                console.log("Item number: " + i);
+                
+            }
+
+            console.log("Listing complete.");
+
+        } else if (numberOfItems === 0) {
+            console.log("You requested to list zero items.");
+        } else {
+            console.log("Invalid input. Please enter a positive number.");
+        }
+    </script> -->
+
+    <!-- <script>
+        const favouitecolur = prompt("what is your favouite color(red, green, black)? ").toLowerCase();
+        let message;
+        switch (favouitecolur) {
+            case "red":
+                message = "red is my favouirte colour"
+                break;
+                case"blue":
+                message = "blue colur i dont like"
+                break;
+
+        
+            default:
+                message = "hmmi dont like ths colour"
+                break;
+        }
+        console.log("your choose colur:", favouitecolur);
+        console.log("response",message);
+        
+        
+    </script> -->
+    <!-- Let’s say you want to print the day of the week for numbers 1 through 5: -->
+        
+    <!-- <script>
+    const favouitecolur = prompt("what's day(monday, tuesday, wednesday)? ").toLowerCase();
+
+        for(i=1;i<=3;i++);
+switch (i) {
+    case 1:
+        console.log('monday');
+        
+        
+        break;
+        case 2:
+            console.log('tuesday');
+            break;
+            case 3:
+                console.log('wednesday');
+break;                
+            
+
+    default:
+        console.log('invalid day');
+        
+        break;
+}
+    </script> -->
+
+    <script>
+        
+        const numberOfDaysString = prompt("Enter the number of days to check (e.g., 3):");
+        const numberOfDays = parseInt(numberOfDaysString);
+
+        if (!isNaN(numberOfDays) && numberOfDays > 0) {
+            console.log(`\n--- Processing ${numberOfDays} Days ---`);
+
+            for (let i = 1; i <= numberOfDays; i++) {
+
+                const dayNumberString = prompt(`Enter a day number (1-7) for Day ${i}:`);
+                const dayNumber = parseInt(dayNumberString);
+
+                let dayName;
+                let dayActivity;
+
+                switch (dayNumber) {
+                    case 1:
+                        dayName = "Monday";
+                        dayActivity = "Start of the work week";
+                        break;
+                    case 2:
+                        dayName = "Tuesday";
+                        dayActivity = "Mid-week progress";
+                        break;
+                    case 3:
+                        dayName = "Wednesday";
+                        dayActivity = "Hump day!";
+                        break;
+                    case 4:
+                        dayName = "Thursday";
+                        dayActivity = "Almost there";
+                        break;
+                    case 5:
+                        dayName = "Friday";
+                        dayActivity = "Weekend is near!";
+                        break;
+                    case 6:
+                        dayName = "Saturday";
+                        dayActivity = "Weekend fun!";
+                        break;
+                    case 7:
+                        dayName = "Sunday";
+                        dayActivity = "Relax and recharge";
+                        break;
+                    default:
+                        dayName = "Invalid Day Number";
+                        dayActivity = "Please enter a number between 1 and 7";
+                }
+
+                console.log(`Day ${i}: Number - ${dayNumber}, Name - ${dayName}, Activity - ${dayActivity}`);
+            }
+
+            console.log("--- End of Day Processing ---");
+
+        } else {
+            console.log("Invalid input for the number of days. Please enter a positive number.");
+        }
+    </script>
+
+    
+</body>
+</html>
